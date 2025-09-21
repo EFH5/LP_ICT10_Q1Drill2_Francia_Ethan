@@ -2,9 +2,9 @@ from pyscript import document
 
 def gather_info(event): 
 
-    name = document.getElementById("name").value
-    age = document.getElementById("age").value
-    school = document.getElementById("school").value
+    name = document.getElementById("name_input").value
+    age = document.getElementById("age_input").value
+    school = document.getElementById("school_input").value
 
     document.getElementById("name").innerText = name
     document.getElementById("age").innerText = age
@@ -12,3 +12,4 @@ def gather_info(event):
 
 info = "{name} is currently {age} years old and studies at {school} \n This information was gathered through input fields and displayed using \t a multiline string in Python via Pyscript"
 document.getElementById("info").innerText = info
+
