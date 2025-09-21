@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drill#2: Francia</title> 
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<style>
+  body{
+    font-family: 'Times New Roman', Times;
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: beige;
+       
+  }
+  input {
+    margin-bottom: 15px;
+  }
+  div {
+    background-color: rgba(104, 104, 104, 0.3);
+    max-width: 760px;
+    font-weight: lighter;
+    margin: auto;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+</style>
+
+<body>
+    <h1>String Showcase: My Basic Info</h1>
+
+    <label id="name">Name:</label><br>
+    <input type="text"><br>
+    
+    <label>Age:</label><br>
+    <input type="text"><br>
+    
+    <label>School:</label><br>
+    <input type="text"><br>
+    
+
+    <button py-click ="gather_info">Generate Message</button>
+
+    <div>
+        <h3>Student Profile<h3>
+        <p>
+            Name : <span id="name"></span><br>
+            Age : <span id="age"></span><br>
+            School : <span id="school"></span><br><br>
+
+            Notes : <br><span id="info"></span><br>
+        </p>
+    </div>
+
+
+
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
