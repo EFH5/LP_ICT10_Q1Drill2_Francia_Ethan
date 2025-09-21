@@ -9,8 +9,9 @@ def gather_info(event):
     document.getElementById("name").innerText = name
     document.getElementById("age").innerText = age
     document.getElementById("school").innerText = school
-
-info = f"""{name} is currently {age} years old and studies at {school}.
+    
+    info = f"""{name} is currently {age} years old and studies at {school}.
 This information was gathered through input fields and displayed using
 a multiline string in Python via PyScript."""
+
 
