@@ -10,6 +10,7 @@ def gather_info(event):
     document.getElementById("age").innerText = age
     document.getElementById("school").innerText = school
 
-info = "{name} is currently {age} years old and studies at {school} \n This information was gathered through input fields and displayed using \t a multiline string in Python via Pyscript"
-document.getElementById("info").innerText = info
+info = f"""{name} is currently {age} years old and studies at {school}.
+This information was gathered through input fields and displayed using
+a multiline string in Python via PyScript."""
 
