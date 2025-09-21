@@ -1,5 +1,7 @@
 from pyscript import document
 
+document.getElementById("info").innerText = ""
+
 def gather_info(event): 
     name = document.getElementById("name_input").value
     age = document.getElementById("age_input").value
@@ -12,5 +14,6 @@ def gather_info(event):
     info = f"""{name} is currently {age} years old and studies at {school}.
 This information was gathered through input fields and displayed using
 a multiline string in Python via PyScript."""
+
 
     document.getElementById("info").innerText = info
